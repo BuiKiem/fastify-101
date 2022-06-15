@@ -1,7 +1,11 @@
-"use strict";
-
-module.exports = async function (fastify, opts) {
-  fastify.get("/", async function (request, reply) {
-    return { api: true };
+/**
+ * Encapsulates the routes
+ * @param {FastifyInstance} fastify  Encapsulated Fastify Instance
+ * @param {Object} options plugin options, refer to https://www.fastify.io/docs/latest/Reference/Plugins/#plugin-options
+ */
+module.exports = async function (fastify) {
+  fastify.get("/", async (request, reply) => {
+    reply.send({ api: true });
+    return reply;
   });
 };
