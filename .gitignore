@@ -102,3 +102,27 @@ dist
 
 # TernJS port file
 .tern-port
+
+# 0x
+profile-*
+
+# mac files
+.DS_Store
+
+# vim swap files
+*.swp
+
+# webstorm
+.idea
+
+# vscode
+.vscode
+*code-workspace
+
+# clinic
+profile*
+*clinic*
+*flamegraph*
+
+# Yarn
+.yarn
